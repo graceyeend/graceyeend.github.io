@@ -1,0 +1,23 @@
+         body {
+            background-color: #F5E3E0;
+        }
+         h1{
+             color: #3A3238;
+             text-align:center;
+         }
+        h2{
+             color: #3A3238;
+             text-align:center;
+        }
+         p{
+             color:#6e4555;
+         }
+
+         td{
+             text-align:center;
+             background-color:#d282A6;
+         }
+         th{
+             text-align:center;
+             background-color:#e8b4bc;
+         }

@@ -1,6 +1,6 @@
         .navbar{
             font-family:serif; 
-            background-color: #FCF5C7;
+            background-color: #FED99B;
             overflow: hidden;
             padding: 0px;
         }
@@ -10,7 +10,7 @@
             color: #FFC09F; 
         }
         .navbar a{
-            color: #FFC09F;
+            color: #FFFF;
             text-decoration: none;
             font-size: 24px;
             padding: 16px; 
@@ -31,6 +31,6 @@
         .dropdown:hover .dropdown-content{
             display:block;
         }
-        .navbar.active{
-            background-color:#FFC09F
-        }
+        .active {
+        background-color: #FED18C;
+        }   
