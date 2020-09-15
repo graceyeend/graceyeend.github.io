@@ -1,8 +1,8 @@
         .navbar{
-            font-family:serif; 
+            font-family: serif; 
             background-color: #FED99B;
             overflow: hidden;
-            padding: 0px;
+            padding: 1px;
         }
         .navbar li{
             list-style-type: none;
@@ -10,21 +10,21 @@
             color: #FFC09F; 
         }
         .navbar a{
-            color: #FFFF;
+            color: whitesmoke;
             text-decoration: none;
             font-size: 24px;
             padding: 16px; 
             display: inline-block;
         }
         .navbar li:hover {
-            background-color: #79ADDC;
+            background-color: #FED18B;
         }
         .dropdown-content li {
             float: none; 
         }
         .dropdown-content {
             padding: 0 px;
-            background-color: aquamarine;
+            background-color: #FED18B;
             display: none;
             position: absolute;
         }
@@ -32,5 +32,5 @@
             display:block;
         }
         .active {
-        background-color: #FED18C;
+        background-color: #FED18B;
         }   
