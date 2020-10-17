@@ -31,7 +31,11 @@
         height: 100%;
         float: left;
     }
-
+    img {
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
     #storytext{
         position: absolute;
         bottom: 100px;
@@ -41,7 +45,6 @@
         justify-content: center;
         padding: 8px;
     }
-
     #choices{
         position: absolute;
         bottom: 0px;
@@ -69,7 +72,7 @@
         max-width: 84%;
         width: 84%; 
     }
-
+    
 </style>
 </head>
 <body>
@@ -90,11 +93,11 @@
             </ul>
     <div id='container'>
         <div id='leftpane'>
-        <img id="story_img" src="images/FR OG.png">
+        <img id="story_img" src="images/FROG.png">
         </div>
         <div id='rightpane'>
             <div id='storytext'>
-                <p id='ptext1'> You are a frog. You are all alone and you do not know what to do. Lets find some things to do! </p>
+                <p id='ptext1'> You are a frog. You are all alone and you do not know what to do. Lets find some things to do!</p>
                 <p id='ptext2'></p>
                 <p id='ptext3'></p>
                 <p id='ptext4'></p>
@@ -109,7 +112,7 @@
     </div>
 
 <script>
-    var pic = document.getElementById('storyimg');
+    var pic = document.getElementById('story_img');
     var ptext1 = document.getElementById('ptext1');
     var ptext2 = document.getElementById('ptext2');
     var ptext3 = document.getElementById('ptext3');
@@ -122,8 +125,8 @@
     intro();
 
     function intro(){
-        pic.src = "images/froggie.png";
-        ptext1.innerHTML = "Froggie is super confused. What do you do?;
+        pic.src = "images/FROG.png";
+        ptext1.innerHTML = "Froggie is super confused. What do you do?";
         ptext2.innerHTML = "Would you rather jump onto a lily pad or into the water?";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
@@ -133,14 +136,13 @@
         b2.style.display = "block";
         b3.style.display = "none";
         b4.style.display = "none";
-        
-    }
+      }
 
     function water(){
         pic.src = "images/water.jpg";
         ptext1.innerHTML = "You have decided to jump into water";
-        ptext2.innerHTML = "But you have been eaten by a fish.";
-        ptext3.innerHTML = ":(";
+        ptext2.innerHTML = "You've jumped in, in the wrong time so you just have a good time.";
+        ptext3.innerHTML = ":)";
         ptext4.innerHTML = "";
         b1.innerHTML = "try again";
         b2.innerHTML = "";
@@ -168,7 +170,7 @@
     function stay(){
          pic.src = "images/lilypad.jpg";
         ptext1.innerHTML = "You stay on the lily";
-        ptext2.innerHTML = "And eat flies";
+        ptext2.innerHTML = "And eat flies, but you get so bored, you are going to go on a swim :D";
         ptext3.innerHTML = "Hit next to continue";
         ptext4.innerHTML = "";
         b1.innerHTML = "next";
@@ -183,23 +185,23 @@
          pic.src = "images/water.jpg";
         ptext1.innerHTML = "You have decided to jump into the water now.";
         ptext2.innerHTML = "But you have found nothing so far";
-        ptext3.innerHTML = "Do you swim futher?";
+        ptext3.innerHTML = "You swim further.";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Swim futher.";
-        b2.innerHTML = "Stay in place in the water.";
+        b1.innerHTML = "Next";
+        b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
-        b2.style.display = "block";
+        b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none";
     }
     function stayInPlace(){
-        pic.src = "images/water.png";
+        pic.src = "images/water.jpg";
         ptext1.innerHTML = "You have decided to swim further."
         ptext2.innerHTML = "Luckly, you have found an underground cave."
         ptext3.innerHTML = "Hit next to continue your journey";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Next.";
+        b1.innerHTML = "Next";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -208,7 +210,7 @@
         b4.style.display = "none";
     }
     function dontSwimFurther(){
-         pic.src = "images/Hardcore.jpg";
+        pic.src = "images/FROG.jpg";
         ptext1.innerHTML = "You have decided to not swim any further ."
         ptext2.innerHTML = "Because of this you spent your time not paying attention and get eaten by a fishie"
         ptext3.innerHTML = ":(";
@@ -222,7 +224,7 @@
         b4.style.display = "none";
     }
     function next(){
-        pic.src = "images/.jpg";
+        pic.src = "images/snails.jpg";
         ptext1.innerHTML = "When you are in this underground cave, a snail asks you to find him some algae"
         ptext2.innerHTML= "Do you take up his offer?";
         ptext3.innerHTML = "";
@@ -236,7 +238,7 @@
         b4.style.display = "none";
     }
     function accept(){
-        pic.src = "images/.png";
+        pic.src = "images/snail1.jpg";
         ptext1.innerHTML = "You have accepted the quest to get the snail food."
         ptext2.innerHTML = ""
         ptext3.innerHTML = "The snail is so kind, he gives you the choice of taking two types of weapons for the way. A sword, a trident or a crossbow, what do you chose?";
@@ -250,7 +252,7 @@
         b4.style.display = "none";
     }
     function decline(){
-        pic.src = "images/.png";
+        pic.src = "images/FROG.png";
         ptext1.innerHTML = "You have decided to decline the quest."
         ptext2.innerHTML ="";
         ptext3.innerHTML = "Are you sure you want to do this?";
@@ -264,7 +266,7 @@
         b4.style.display = "none";
     }
     function end1(){
-        pic.src = "images/.jpg";
+        pic.src = "images/FROG.jpg";
         ptext1.innerHTML = "You have totally decline the quest"
         ptext2.innerHTML ="Therefore the game is over. "
         ptext3.innerHTML = "";
@@ -278,7 +280,7 @@
         b4.style.display = "none";
     }
     function sword(){
-        pic.src = "images/sword.png";
+        pic.src = "images/sword.jpg";
         ptext1.innerHTML = "You have choosen the sword."
         ptext2.innerHTML = "Hit next to continue "
         ptext3.innerHTML = "";
@@ -292,7 +294,7 @@
         b4.style.display = "none";
     }
     function trident(){
-       pic.src = "images/.jpg";
+       pic.src = "images/trident.jpg";
         ptext1.innerHTML = "You have choosen the trident"
         ptext2.innerHTML = "Hit next to continue"
         ptext3.innerHTML = "";
@@ -306,7 +308,7 @@
         b4.style.display = "none"; 
     }
     function crossbow(){
-          pic.src = "images/.png";
+          pic.src = "images/crossbow.jpg";
         ptext1.innerHTML = "You have choosen a crossbow!"
         ptext2.innerHTML = "Hit next to continue"
         ptext3.innerHTML = "";
@@ -320,7 +322,7 @@
         b4.style.display = "none"; 
     }
     function help(){
-        pic.src = "images/.png";
+        pic.src = "images/helmet.jpg";
         ptext1.innerHTML = "While you were leaving the cave, another snail comes up to you. He gives you a helmit! "
         ptext2.innerHTML = "He tells you to start leaving and get their food."
         ptext3.innerHTML = "";
@@ -334,7 +336,7 @@
         b4.style.display = "none"; 
     }
         function help2(){
-        pic.src = "images/.png";
+        pic.src = "images/helmet.jpg";
         ptext1.innerHTML = "While you were leaving the cave, another snail comes up to you. He gives you a helmit! "
         ptext2.innerHTML = "He tells you to start leaving and get their food."
         ptext3.innerHTML = "";
@@ -348,7 +350,7 @@
         b4.style.display = "none"; 
     }
     function cantLeave(){
-        pic.src = "images/.jpg";
+        pic.src = "images/FROG.png";
         ptext1.innerHTML = "Since you dont have a helmit, you are scared to leave."
         ptext2.innerHTML = ":("
         ptext3.innerHTML = "";
@@ -360,8 +362,91 @@
         b2.style.display = "none";
         b3.style.display = "none";
         b4.style.display = "none"; 
+        }        
+  function startAdventure(){
+        pic.src = "images/helmet.jpg";
+        ptext1.innerHTML = "When leaving the cave, u have two choice!"
+        ptext2.innerHTML = "Will you go left or right?"
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Right";
+        b2.innerHTML = "Left";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none"; 
     }
-      }
+    function right(){
+        pic.src = "images/helmet.jpg";
+        ptext1.innerHTML = "You have turned right and found the food!!"
+        ptext2.innerHTML = "But you are also hungry, what do you do? "
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Steal it for yourself";
+        b2.innerHTML = "Bring the food to the snails!";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none"; 
+    }
+    function left(){
+        pic.src = "images/helmet.jpg";
+        ptext1.innerHTML = "You choose to go left"
+        ptext2.innerHTML = "And stumble upon a school of fish"
+        ptext3.innerHTML = "Since there was so many, you die";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Try Again";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none"; 
+    }
+    function goBack(){
+     pic.src = "images/helmet.jpg";
+        ptext1.innerHTML = "You are bringing the food back to the snails. "
+        ptext2.innerHTML = "Hit Next To Continue."
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Next";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none"; 
+    }
+    function jumpInside(){
+     pic.src = "images/FROG.png";
+        ptext1.innerHTML = "You steal the food for yourself >:("
+        ptext2.innerHTML = "You run into some trouble and die."
+        ptext3.innerHTML = "Dont steal.";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Try Again";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none"; 
+    }
+    function getFood(){
+        pic.src = "images/friend.jpg";
+        ptext1.innerHTML = "You bring the food to the snails and they live happily ever after!!"
+        ptext2.innerHTML = ""
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "The End";
+        b1.innerHTML = "";
+        b2.innerHTML = "";
+        b3.innerHTML = "";
+        b1.style.display = "none";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none"; 
+    }
     //state machine
     function bclick(button){
         if(state == "intro"){
@@ -375,17 +460,163 @@
                 state = "lilyPad";
             }
         }
-           else if(state == "water"){
-                if(button == 1 ){
-                    intro();
-                    state="intro";
+        else if(state == "water"){
+            if(button == 1 ){
+                intro();
+                state="intro";
             }
          }
-             else if(state == "lilyPad"){
-                if(button == 1){
-                    stay();
-                    state = "stay";
+        else if(state == "lilyPad"){
+            if(button == 1){
+                stay();
+                state = "stay";
+                    }
+             
+              else if(button == 2){
+                    goIntoWater();
+                    state = "goIntoWater";
                 }
-</script>
-</body>
+             }
+                else if (state =="goIntoWater"){
+                    if(button ==1){
+                        stayInPlace();
+                        state="stayInPlace";
+                    }
+                    else if(button==2){
+                        dontWalkFuther();
+                        state="dontSwimFurther"
+                    }
+                }
+                    else if (state== "dontSwimFurther"){
+                        if(button ==1){
+                            intro();
+                            state="intro"
+                        }
+                    }
+                 else if (state =="stayInPlace"){
+                    if (button ==1){
+                        next();
+                        state="next";
+                    }
+                }
+                else if (state=="stay"){
+                    if (button==1){
+                        next();
+                        state="next";
+                    }
+                }
+                else if (state=="next"){
+                    if(button ==1){
+                        accept();
+                        state="accept";
+                    }
+                    else if(button ==2){
+                        decline();
+                        state="decline";
+                    }
+                }
+            else if (state=="decline"){
+                if (button ==1){
+                    end1();
+                    state="end1"
+                }
+            }
+            else if (state =="end1"){
+                if(button ==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state == "accept"){
+                if(button ==1){
+                    trident();
+                        state="trident"
+                }
+                else if(button==2){
+                    sword();
+                        state="sword";
+                    }
+                else if (button ==3){
+                    crossbow();
+                    state="crossbow";
+                }
+            }  
+            else if(state == "trident"){
+                if(button==1){
+                    help2();
+                    state="help2"
+                }
+            }
+            else if(state=="sword"){
+                if(button==1){
+                    help2();
+                    state="help2"
+                }
+            }
+            else if(state=="crossbow"){
+                if(button==1){
+                    help2();
+                    state="help2";
+                }
+            }
+            else if (state=="help"){
+                if(button==1){
+                    cantLeave();
+                    state="cantLeave";
+                }
+            }
+            else if(state=="cantLeave"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="help2"){
+                if(button ==1){
+                    startAdventure();
+                    state="startAdventure";
+                }
+            }
+            else if(state=="startAdventure"){
+                if(button==1){
+                    right();
+                    state="right"
+                }
+                else if(button==2){
+                    left();
+                    state="left";
+                }
+            }
+            else if(state=="left"){
+                if(button==1){
+                    intro();
+                    state="intro"
+                }
+            }
+            else if (state=="right"){
+                if(button == 1){
+                    jumpInside();
+                    state="jumpInside"
+                }
+                else if(button==2){
+                    goBack();
+                    state="goBack"
+                }
+            }
+            else if(state=="goBack"){
+                if(button ==1){
+                    getFood();
+                    state="intro"
+                }
+            }
+            else if(state=="jumpInside"){
+                if (button==1){
+                    intro();
+                    state="jumpInside"
+                }
+            }
+                return false;
+            }
+        </script>
+    </body>
 </html>
