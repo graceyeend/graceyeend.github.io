@@ -76,6 +76,21 @@
 </style>
 </head>
 <body>
+    <ul class="navbar">
+        <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contactme.html">Contact me</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li class="dropdown">
+            <a href= "#">Projects</a> 
+            <ul class="dropdown-content">
+            <li><a href= "textadventure.html">Text Adventure</a></li>
+            <li><a href= "pyhtonproject.html">Python Project</a></li>
+            <li><a href= "rock-paper-scissors.html"> RPS GUI</a></li>
+            <li><a href= "rsaproject.html"> RSA Project</a></li>
+            <li><a href= "therapy.html">Therapy Bot Thing</a></li>
+        </ul>
     <div id='container'>
         <div id='leftpane'>
         <img id="story_img" src="images/">
@@ -184,7 +199,7 @@
         pic.src = "images/";
         ptext1.innerHTML = "When having a problem with a friend or family member, it is also good to talk to another friend about it."
         ptext2.innerHTML = "Other people can seriously help you, they will most likely help. Dont be scared!"
-        ptext3.innerHTML = "";
+        ptext3.innerHTML = "If you are a highschool or middle school, they usally have therpist, free of charge!";
         ptext4.innerHTML = "";
         b1.innerHTML = "next";
         b2.innerHTML = "";
@@ -320,20 +335,19 @@
         b3.style.display = "none";
         b4.style.display = "none"; 
     }
-    function cantLeave(){
-        pic.src = "images/";
-        ptext1.innerHTML = "Since you dont have a helmit, you are scared to leave."
-        ptext2.innerHTML = ":("
-        ptext3.innerHTML = "";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "Try Again";
-        b2.innerHTML = "";
-        b3.innerHTML = "";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none"; 
-        }        
+    //function cantLeave(){
+       // #pic.src = "images/";
+       // ptext1.innerHTML = "Since you dont have a helmit, you are scared to leave."
+       // ptext2.innerHTML = ":("
+       // ptext3.innerHTML = "";
+       // ptext4.innerHTML = "";
+       // b1.innerHTML = "Try Again";
+       // b2.innerHTML = "";
+       // b3.innerHTML = "";
+       // b1.style.display = "block";
+       // b2.style.display = "none";
+       // b3.style.display = "none";
+       // b4.style.display = "none";        
   function startAdventure(){
         pic.src = "images/";
         ptext1.innerHTML = "What do you feel bad about now?"
@@ -392,11 +406,11 @@
     }
     function jumpInside(){
      pic.src = "images/";
-        ptext1.innerHTML = "Your face and body?? "
-        ptext2.innerHTML = "You run into some trouble and die."
-        ptext3.innerHTML = "Dont steal.";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "Try Again";
+        ptext1.innerHTML = "I bet you have done a lot of stuff!"
+        ptext2.innerHTML = "Writing about your feelings can help with it along with wearing baggy clothes and expersing yourself. Also talking to a friend about it."
+        ptext3.innerHTML = "If you dont have a friend, it is eas=ier to make online friends!";
+        ptext4.innerHTML = "I hoped I helped; make sure to text 741741 if none of the above helped";
+        b1.innerHTML = "More Support";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -406,10 +420,10 @@
     }
     function getFood(){
         pic.src = "images/";
-        ptext1.innerHTML = "You bring the food to the snails and they live happily ever after!!"
-        ptext2.innerHTML = ""
-        ptext3.innerHTML = "";
-        ptext4.innerHTML = "The End";
+        ptext1.innerHTML = "Your face and body??"
+        ptext2.innerHTML = "Writing about your feelings can help with it along with wearing baggy clothes and expersing yourself."
+        ptext3.innerHTML = "I hoped I helped";
+        ptext4.innerHTML = "More Support";
         b1.innerHTML = "";
         b2.innerHTML = "";
         b3.innerHTML = "";
