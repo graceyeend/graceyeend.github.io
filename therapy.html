@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Froggie Text Adventure</title>
+<title>Therapy</title>
         <link rel="stylesheet"type="text/css" href= "css/navbar.css"/>
         <link rel="stylesheet"type="text/css" href= "css/style.css"/>
     </head>
@@ -13,7 +13,7 @@
         bottom: 0px;
         left: 0px;
         right: 0px;
-        background-color: #e8b4bc;
+        background-color: #BACEC1;
     }
 
     #leftpane{
@@ -23,7 +23,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #6e4555;
+        background-color: #E59560;
     }
 
     #rightpane{
@@ -58,8 +58,8 @@
 
     #b1, #b2, #b3, #b4{
         display: inline-block;
-        background-color: purple;
-        color: white;
+        background-color: #BACEC1;
+        color: #F6F4E8;
         font-size: 16px;
         padding: 10px;
         border-radius: 8px;
@@ -76,28 +76,13 @@
 </style>
 </head>
 <body>
- <ul class="navbar">
-           <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contactme.html">Contact me</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-            <li class="dropdown">
-             <a href= "#">Projects</a> 
-             <ul class="dropdown-content">
-                <li><a href= "textadventure.html">Text Adventure</a></li>
-                <li><a href= "pyhtonproject.html">Python Project</a></li>
-                <li><a href= "rock-paper-scissors.html"> RPS GUI</a></li>
-                <li><a href= "rsaproject.html"> RSA Project</a></li>
-                <li><a href= "#">Project 5</a></li>
-            </ul>
     <div id='container'>
         <div id='leftpane'>
-        <img id="story_img" src="images/FROG.png">
+        <img id="story_img" src="images/">
         </div>
         <div id='rightpane'>
             <div id='storytext'>
-                <p id='ptext1'> You are a frog. You are all alone and you do not know what to do. Lets find some things to do!</p>
+                <p id='ptext1'> </p>
                 <p id='ptext2'></p>
                 <p id='ptext3'></p>
                 <p id='ptext4'></p>
@@ -125,13 +110,13 @@
     intro();
 
     function intro(){
-        pic.src = "images/FROG.png";
-        ptext1.innerHTML = "Froggie is super confused. What do you do?";
-        ptext2.innerHTML = "Would you rather jump onto a lily pad or into the water?";
+        pic.src = "images/sadhappy10.jpg";
+        ptext1.innerHTML = "How has your day been?";
+        ptext2.innerHTML = "Rate it on a scale 1-6 to 7-10?";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Jump into water";
-        b2.innerHTML = "Jump onto a lilypad";
+        b1.innerHTML = "7-10";
+        b2.innerHTML = "1-6";
         b1.style.display = "block";
         b2.style.display = "block";
         b3.style.display = "none";
@@ -139,12 +124,12 @@
       }
 
     function water(){
-        pic.src = "images/water.jpg";
-        ptext1.innerHTML = "You have decided to jump into water";
-        ptext2.innerHTML = "You've jumped in, in the wrong time so you just have a good time.";
-        ptext3.innerHTML = ":)";
+        pic.src = "images/happy.jpg";
+        ptext1.innerHTML = "I'm so proud of you!!";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = ":D";
         ptext4.innerHTML = "";
-        b1.innerHTML = "try again";
+        b1.innerHTML = "Have a nice day, if you feel bad you can come back";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -154,13 +139,13 @@
         
     }
     function lilyPad(){
-        pic.src = "images/lilypad.jpg";
-        ptext1.innerHTML = "You have decided to jump onto a lilypad!";
-        ptext2.innerHTML = "Do you stay?";
-        ptext3.innerHTML = "Or do you try jumping in the water?";
+        pic.src = "images/itsokay.png";
+        ptext1.innerHTML = "Oh, you are not feeling well? I'm here to help you.";
+        ptext2.innerHTML = "What has been bothering you?";
+        ptext3.innerHTML = "It is okay to feel sad.";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Ill stay :)";
-        b2.innerHTML = "I want to jump into the water!";
+        b1.innerHTML = "I just do not feel good about my self-worth.";
+        b2.innerHTML = "My family/friends have not been treating me well.";
         b3.innerHTML = "";
         b1.style.display = "block";
         b2.style.display = "block";
@@ -168,11 +153,11 @@
         b4.style.display = "none";
     }
     function stay(){
-         pic.src = "images/lilypad.jpg";
-        ptext1.innerHTML = "You stay on the lily";
-        ptext2.innerHTML = "And eat flies, but you get so bored, you are going to go on a swim :D";
-        ptext3.innerHTML = "Hit next to continue";
-        ptext4.innerHTML = "";
+        pic.src = "images/iam.jpg";
+        ptext1.innerHTML = "Self worth is a really hard thing to deal with. I know we have not met but personally, I bet you are amazing.";
+        ptext2.innerHTML = "It is super hard to even admit to having a problem, for that, I am proud of you. There is a lot of things that can help that are not me!";
+        ptext3.innerHTML = "I suggest to journal down all your feelings, like in the notes app in your phone or tell a freind if you can vent. It's okay.";
+        ptext4.innerHTML = "If you are a highschool or middle school, they usally have therpist, free of charge!";
         b1.innerHTML = "next";
         b2.innerHTML = "";
         b3.innerHTML = "";
@@ -182,12 +167,12 @@
         b4.style.display = "none";
     }
     function goIntoWater(){
-         pic.src = "images/water.jpg";
-        ptext1.innerHTML = "You have decided to jump into the water now.";
-        ptext2.innerHTML = "But you have found nothing so far";
-        ptext3.innerHTML = "You swim further.";
+        pic.src = "images/familyfriends.jpg";
+        ptext1.innerHTML = "Sometimes, it can be really hard to deal with friends or family. They are not always perfect, neither are you.";
+        ptext2.innerHTML = "The best solution for this is to talk to them about it; it can take time to speak up.";
+        ptext3.innerHTML = "If you are a highschool or middle school, they usally have therpist, free of charge!";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Next";
+        b1.innerHTML = "next";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -196,12 +181,12 @@
         b4.style.display = "none";
     }
     function stayInPlace(){
-        pic.src = "images/water.jpg";
-        ptext1.innerHTML = "You have decided to swim further."
-        ptext2.innerHTML = "Luckly, you have found an underground cave."
-        ptext3.innerHTML = "Hit next to continue your journey";
+        pic.src = "images/";
+        ptext1.innerHTML = "When having a problem with a friend or family member, it is also good to talk to another friend about it."
+        ptext2.innerHTML = "Other people can seriously help you, they will most likely help. Dont be scared!"
+        ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Next";
+        b1.innerHTML = "next";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -210,7 +195,7 @@
         b4.style.display = "none";
     }
     function dontSwimFurther(){
-        pic.src = "images/FROG.jpg";
+        pic.src = "images/";
         ptext1.innerHTML = "You have decided to not swim any further ."
         ptext2.innerHTML = "Because of this you spent your time not paying attention and get eaten by a fishie"
         ptext3.innerHTML = ":(";
@@ -224,9 +209,9 @@
         b4.style.display = "none";
     }
     function next(){
-        pic.src = "images/snails.jpg";
-        ptext1.innerHTML = "When you are in this underground cave, a snail asks you to find him some algae"
-        ptext2.innerHTML= "Do you take up his offer?";
+        pic.src = "images/";
+        ptext1.innerHTML = "I am very glad that you have been trying to work on this topic of yours."
+        ptext2.innerHTML= "Do you need more support?";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
         b1.innerHTML = "Yes";
@@ -238,24 +223,24 @@
         b4.style.display = "none";
     }
     function accept(){
-        pic.src = "images/snail1.jpg";
-        ptext1.innerHTML = "You have accepted the quest to get the snail food."
-        ptext2.innerHTML = ""
-        ptext3.innerHTML = "The snail is so kind, he gives you the choice of taking two types of weapons for the way. A sword, a trident or a crossbow, what do you chose?";
+        pic.src = "images/";
+        ptext1.innerHTML = "I appolgize that you do not feel better yet."
+        ptext2.innerHTML = "Off topic but cats or dogs?"
+        ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "The trident, duh.";
-        b2.innerHTML = "The sword!";
-        b3.innerHTML = "The crossbow!!";
+        b1.innerHTML = "Cats";
+        b2.innerHTML = "Dogs";
+        b3.innerHTML = "";
         b1.style.display = "block";
         b2.style.display = "block";
         b3.style.display = "block";
         b4.style.display = "none";
     }
     function decline(){
-        pic.src = "images/FROG.png";
-        ptext1.innerHTML = "You have decided to decline the quest."
+        pic.src = "images/";
+        ptext1.innerHTML = "Im super happy that you feel better!"
         ptext2.innerHTML ="";
-        ptext3.innerHTML = "Are you sure you want to do this?";
+        ptext3.innerHTML = "Are you sure you do not want more support?";
         ptext4.innerHTML = "";
         b1.innerHTML = "Yes";
         b2.innerHTML = "No";
@@ -266,12 +251,12 @@
         b4.style.display = "none";
     }
     function end1(){
-        pic.src = "images/FROG.jpg";
-        ptext1.innerHTML = "You have totally decline the quest"
-        ptext2.innerHTML ="Therefore the game is over. "
+        pic.src = "images/";
+        ptext1.innerHTML = "Please remeber that you are loved. If you need to vent, but do not know what to do. Text 'Home' to 741-741."
+        ptext2.innerHTML = "It is going to be okay."
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Try Again";
+        b1.innerHTML = "More Support";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -280,9 +265,9 @@
         b4.style.display = "none";
     }
     function sword(){
-        pic.src = "images/sword.jpg";
-        ptext1.innerHTML = "You have choosen the sword."
-        ptext2.innerHTML = "Hit next to continue "
+        pic.src = "images/";
+        ptext1.innerHTML = "Dogs are super cute! I love your decision. This question did not matter, I just wanted to know you better. "
+        ptext2.innerHTML = ""
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
         b1.innerHTML = "Next";
@@ -294,23 +279,9 @@
         b4.style.display = "none";
     }
     function trident(){
-       pic.src = "images/trident.jpg";
-        ptext1.innerHTML = "You have choosen the trident"
-        ptext2.innerHTML = "Hit next to continue"
-        ptext3.innerHTML = "";
-        ptext4.innerHTML = "";
-        b1.innerHTML = "Next";
-        b2.innerHTML = "";
-        b3.innerHTML = "";
-        b1.style.display = "block";
-        b2.style.display = "none";
-        b3.style.display = "none";
-        b4.style.display = "none"; 
-    }
-    function crossbow(){
-          pic.src = "images/crossbow.jpg";
-        ptext1.innerHTML = "You have choosen a crossbow!"
-        ptext2.innerHTML = "Hit next to continue"
+       pic.src = "images/";
+        ptext1.innerHTML = "Cats are super cute! I love your decision. This question did not matter, I just wanted to know you better. "
+        ptext2.innerHTML = ""
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
         b1.innerHTML = "Next";
@@ -322,12 +293,12 @@
         b4.style.display = "none"; 
     }
     function help(){
-        pic.src = "images/helmet.jpg";
-        ptext1.innerHTML = "While you were leaving the cave, another snail comes up to you. He gives you a helmit! "
-        ptext2.innerHTML = "He tells you to start leaving and get their food."
+        pic.src = "images/";
+        ptext1.innerHTML = "Well lets get more support!"
+        ptext2.innerHTML = ""
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Start your Adventure";
+        b1.innerHTML = "More support";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -336,12 +307,12 @@
         b4.style.display = "none"; 
     }
         function help2(){
-        pic.src = "images/helmet.jpg";
-        ptext1.innerHTML = "While you were leaving the cave, another snail comes up to you. He gives you a helmit! "
-        ptext2.innerHTML = "He tells you to start leaving and get their food."
+        pic.src = "images/";
+        ptext1.innerHTML = "Well lets get more support! "
+        ptext2.innerHTML = ""
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Start your Adventure";
+        b1.innerHTML = "More support";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -350,7 +321,7 @@
         b4.style.display = "none"; 
     }
     function cantLeave(){
-        pic.src = "images/FROG.png";
+        pic.src = "images/";
         ptext1.innerHTML = "Since you dont have a helmit, you are scared to leave."
         ptext2.innerHTML = ":("
         ptext3.innerHTML = "";
@@ -364,13 +335,13 @@
         b4.style.display = "none"; 
         }        
   function startAdventure(){
-        pic.src = "images/helmet.jpg";
-        ptext1.innerHTML = "When leaving the cave, u have two choice!"
-        ptext2.innerHTML = "Will you go left or right?"
+        pic.src = "images/";
+        ptext1.innerHTML = "What do you feel bad about now?"
+        ptext2.innerHTML = "Same thing or something new?"
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Right";
-        b2.innerHTML = "Left";
+        b1.innerHTML = "Something new";
+        b2.innerHTML = "Same thing";
         b3.innerHTML = "";
         b1.style.display = "block";
         b2.style.display = "block";
@@ -378,13 +349,13 @@
         b4.style.display = "none"; 
     }
     function right(){
-        pic.src = "images/helmet.jpg";
-        ptext1.innerHTML = "You have turned right and found the food!!"
-        ptext2.innerHTML = "But you are also hungry, what do you do? "
+        pic.src = "images/";
+        ptext1.innerHTML = "What do you feel bad about now?"
+        ptext2.innerHTML = ""
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Steal it for yourself";
-        b2.innerHTML = "Bring the food to the snails!";
+        b1.innerHTML = "My achivements";
+        b2.innerHTML = "My body/face";
         b3.innerHTML = "";
         b1.style.display = "block";
         b2.style.display = "block";
@@ -392,12 +363,12 @@
         b4.style.display = "none"; 
     }
     function left(){
-        pic.src = "images/helmet.jpg";
-        ptext1.innerHTML = "You choose to go left"
-        ptext2.innerHTML = "And stumble upon a school of fish"
-        ptext3.innerHTML = "Since there was so many, you die";
+        pic.src = "images/";
+        ptext1.innerHTML = "It is the same thing? That is okay! It is normal to feel bad. Lemmie help out some more!"
+        ptext2.innerHTML = "If you are unable to talk to somebody, text 741741 'HOME' and they are really good support!"
+        ptext3.innerHTML = "Please remember that you are super sweet and kind. Your friends and family love you even if it may not look like it";
         ptext4.innerHTML = "";
-        b1.innerHTML = "Try Again";
+        b1.innerHTML = "More Support";
         b2.innerHTML = "";
         b3.innerHTML = "";
         b1.style.display = "block";
@@ -406,7 +377,7 @@
         b4.style.display = "none"; 
     }
     function goBack(){
-     pic.src = "images/helmet.jpg";
+     pic.src = "images/";
         ptext1.innerHTML = "You are bringing the food back to the snails. "
         ptext2.innerHTML = "Hit Next To Continue."
         ptext3.innerHTML = "";
@@ -420,8 +391,8 @@
         b4.style.display = "none"; 
     }
     function jumpInside(){
-     pic.src = "images/FROG.png";
-        ptext1.innerHTML = "You steal the food for yourself >:("
+     pic.src = "images/";
+        ptext1.innerHTML = "Your face and body?? "
         ptext2.innerHTML = "You run into some trouble and die."
         ptext3.innerHTML = "Dont steal.";
         ptext4.innerHTML = "";
@@ -434,7 +405,7 @@
         b4.style.display = "none"; 
     }
     function getFood(){
-        pic.src = "images/friend.jpg";
+        pic.src = "images/";
         ptext1.innerHTML = "You bring the food to the snails and they live happily ever after!!"
         ptext2.innerHTML = ""
         ptext3.innerHTML = "";
@@ -447,7 +418,7 @@
         b3.style.display = "none";
         b4.style.display = "none"; 
     }
-    //state machine
+      //state machine
     function bclick(button){
         if(state == "intro"){
             if (button == 1){
