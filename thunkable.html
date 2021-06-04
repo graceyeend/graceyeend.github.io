@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hangman</title>
+        <link rel="stylesheet"type="text/css" href= "css/navbar.css"/>
+        <link rel="stylesheet"type="text/css" href= "css/style.css"/>
+    </head>
+</head>
+<style>
+    #container{
+        position: absolute;
+        top: 75px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: #BACEC1;
+    }
+
+    #leftpane{
+        width: 56%;
+        height: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #E59560;
+    }
+
+    #rightpane{
+        width: 44%;
+        height: 100%;
+        float: left;
+    }
+    img {
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+    #storytext{
+        position: absolute;
+        bottom: 100px;
+        top: 0px;
+        left: 56%;
+        right: 0px;
+        justify-content: center;
+        padding: 8px;
+    }
+    #choices{
+        position: absolute;
+        bottom: 0px;
+        left: 56%;
+        right: 0px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #b1, #b2, #b3, #b4{
+        display: inline-block;
+        background-color: #BACEC1;
+        color: #F6F4E8;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        margin: 8px;
+    }
+
+    #storyimg{
+        max-height: 84%;
+        max-width: 84%;
+        width: 84%; 
+    }
+    
+</style>
+</head>
+<body>
+    <ul class="navbar">
+        <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contactme.html">Contact me</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li class="dropdown">
+            <a href= "#">Projects</a> 
+            <ul class="dropdown-content">
+            <li><a href= "textadventure.html">Text Adventure</a></li>
+            <li><a href= "pyhtonproject.html">Python Project</a></li>
+            <li><a href= "rock-paper-scissors.html"> RPS GUI</a></li>
+            <li><a href= "rsaproject.html">RSA Project</a></li>
+            <li><a href= "therapy.html">Therapy Bot Thing</a></li>
+            <li><a href= "thunkable.html">Thunkable Final</a></li>
+        </ul>
+    </li>
+</ul>
+        <hr>
+        <h1> Thunkable Final </h1>
+        <h2> By Grace D. Yeend </h2>
+        <hr>
+<iframe height="400px" width="100%" src="https://x.thunkable.com/copy/42537208db935c4a940bd5a47996bf9c" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<hr>
+<h2>Video of RSA Encryption and Decyption</h2>
+<video width="320" height="240" controls>
+  <source src="videos/iWannaCry.mp4" type="videos/mp4">
+</video>
+<hr>
+<h2>3A</h2>
+<p>The purpose of my program is to play hangman with the user. When the user types in a single letter, it will tell the user if they are right or wrong. If they are wrong, the score will go down minus one; if they get it correct, the chances will stay the same.</p>
